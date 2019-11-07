@@ -8,14 +8,32 @@
   src: url('../fonts/Mark Simonson  Proxima Nova Regular.otf') format('opentype');
 }
 
-body {
-  font-family: 'Nova Regular';
+@font-face {
+  font-family: 'Nova Thin';
+  src: url('../fonts/Mark Simonson  Proxima Nova Thin.otf') format('opentype');
 }
 
-/* body {
-  font-family: sans-serif;
+@font-face {
+  font-family: 'Nova Light';
+  src: url('../fonts/Mark Simonson  Proxima Nova Light.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Nova Bold';
+  src: url('../fonts/Mark Simonson  Proxima Nova Bold.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Nova Black';
+  src: url('../fonts/Mark Simonson  Proxima Nova Black.otf') format('opentype');
+}
+
+body {
+  font-family: 'Nova Regular';
   padding: 2rem;
-} */
+  color: white;
+  background-color: black;
+}
 
 section:not([id]) {
   margin: 1em 0;
@@ -34,6 +52,63 @@ section p {
 section code {
   background-color: #EEE;
   padding: 0.5em 0.75em;
+}
+
+.logo {
+  font-family: 'Nova Thin';
+  text-align: center;
+  letter-spacing: 5px;
+}
+
+.logo b{
+  font-family: 'Nova Black';
+}
+
+.topnav nav ul{
+  text-align: center;
+}
+
+.topnav nav ul li{
+  display: inline-block;
+  padding: 20px;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  font-family: 'Nova Thin';
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the font weight of links on hover */
+.topnav a:hover {
+  font-family: 'Nova Bold';
+}
+
+/* Add a weight to the active/current link */
+.topnav a.active {
+  font-family: 'Nova Bold';
+  color: white;
+}
+
+
+/* Responsive navigation menu - display links on top of each other instead of next to each other (for mobile devices) */
+@media screen and (max-width: 600px) {
+  .topnav a, .topnav-right {
+    float: none;
+    display: block;
+  }
+
+  .topnav-centered a {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+  }
 }
 
 
@@ -69,3 +144,13 @@ section code {
 /*
   COMBINED ELEMENTS -------------------
 */
+
+.banner img {
+  width: 100%;
+  padding-bottom: 2em;
+}
+
+.content{
+  margin-left: 30%;
+  margin-right: 30%;
+}
