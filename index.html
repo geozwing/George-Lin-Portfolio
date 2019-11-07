@@ -25,7 +25,7 @@
         <li><a href="bio.html">Bio</a></li>
         <li><a href="project1.html">Project #1</a></li>
         <li><a href="project2.html">Project #2</a></li>
-        <li><a href="template.html">Template</a></li>
+        <!-- <li><a href="template.html">Template</a></li> -->
       </ul>
     </nav>
   </div>
@@ -44,6 +44,7 @@
         Go to:
         <a href="#interactive_elements">Interactive Elements</a>,
         <a href="#text_elements">Text Elements</a>,
+        <a href="#components">Components</a>,
         <a href="#combined_elements">Combined Elements</a>,
       </p>
 
@@ -64,6 +65,7 @@
         <p>.button-nav</p>
 
         <h3>Sample code:</h3>
+        <br>
         <code>&lt;a href="#" class="button"&gt;Default Button&lt;/a&gt;</code>
 
         <h3>Rendered element:</h3>
@@ -99,27 +101,27 @@
       </section>
 
       <!-- Radio Button with Label -->
-          <section class="element">
-            <h3>Radio Button with Label</h3>
+      <section class="element">
+        <h3>Radio Button with Label</h3>
 
-            <label class="radio">Choice 1
-              <input type="radio" checked="checked" name="radio">
-              <span class="checkmark"></span>
-            </label>
-            <label class="radio">Choice 2
-              <input type="radio" name="radio">
-              <span class="checkmark"></span>
-            </label>
-
-
-            <!-- Image as a Link -->
-            <section class="element2">
-              <h3>Image as a Link</h3>
-              <a href="bio.html"><img src="img/ss2.jpg" alt="bio pic" style="width: 80%; height: 80%"></a>
-            </section>
+        <label class="radio">Choice 1
+          <input type="radio" checked="checked" name="radio">
+          <span class="checkmark"></span>
+        </label>
+        <label class="radio">Choice 2
+          <input type="radio" name="radio">
+          <span class="checkmark"></span>
+        </label>
 
 
-          </section>
+        <!-- Image as a Link -->
+        <section class="element2">
+          <h3>Image as a Link</h3>
+          <a href="bio.html"><img src="img/ss2.jpg" alt="bio pic" style="width: 100%; height: 100%"></a>
+        </section>
+
+
+      </section>
     </section>
     <!-- // INTERACTIVE ELEMENTS SECTION -->
 
@@ -143,7 +145,7 @@
 
       <section>
         <h3>Paragraphs</h3>
-
+        <br>
         <p>This is a paragraph</p>
         <p>This is another paragraph.
           <span>And here is a span</span></p>
@@ -157,24 +159,69 @@
         <h3>Numbered Lists</h3>
       </section>
 
-        <ol>
-          <li>Item 1 for ordered list</li>
-          <li>Item 2 for ordered list</li>
-        </ol>
+      <ol>
+        <li>Item 1 for ordered list</li>
+        <li>Item 2 for ordered list</li>
+      </ol>
     </section>
     <!-- // TEXT ELEMENTS SECTION -->
 
+    <!-- //COMPONENTS -->
+    <section id="components">
+      <h2>Components</h2>
 
+      <section>
+        <h3>Fonts</h3>
+        <section class="header">
+          <h1>Proxima Nova</h1>
+        </section>
+      </section>
+
+      <!-- Color Palettes -->
+      <section>
+        <h3>Colour palettes</h3>
+
+        <div class="containergrid">
+          <div class="block">
+            <div class="one">
+              <div class="desc">#9933ff</div>
+            </div>
+          </div>
+          <div class="block">
+            <div class="two">
+              <div class="desc">#ccccff</div>
+            </div>
+          </div>
+          <div class="block">
+            <div class="three">
+              <div class="desc">#fff</div>
+            </div>
+          </div>
+          <div class="block">
+            <div class="four">
+              <div class="desc">#000</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Imagary -->
+      <section>
+        <h3>Potential imagery, and, or, art direction</h3>
+        <br>
+        <a href="project1.html"><img src="img/p1/03.png" alt="image1" style="width: 100%; height: 100%;" align="middle"></a>
+        <a href="project2.html"><img src="img/p2/screen2.png" alt="image2" style="width: 100%; height: 100%;" align="middle"></a>
+      </section>
+    </section>
 
     <!-- COMBINED ELEMENTS SECTION // -->
     <section id="combined_elements">
       <h2>Combined Elements</h2>
 
-      <section>
-        <h3>Main Navigation</h3>
 
+      <section>
         <div class="topnav">
-                  <h4>Navigation Bar</h4>
+          <h3>Main Navigation</h3>
           <nav>
             <ul>
               <!-- Centered link -->
@@ -187,10 +234,35 @@
           </nav>
         </div>
       </section>
+      <section>
+        <h3>Image example with citation</h3>
+        <br>
+        <div class="pic">
+          <img src="img/p2/03.png" alt="Maximum Power" style="width: 100%; height: 100%" align="middle">
+          <small>Figure 4: Maximum Power (Screenshot) Milestone one gameplay, 2018</small>
+        </div>
 
-
+      </section>
+<section>
+  <h3>Contact us form</h3>
+  <br>
+      <form action="about.html">
+        <div class="feedback-container">
+          <br>
+          Full name:<br>
+          <input type="text" name="fullname" placeholder="Full name"><br><br>
+          Email:<br>
+          <input type="text" name="email" placeholder="E-mail"><br><br>
+          Phone Number:<br>
+          <input type="text" name="phone" placeholder="Phone Number"><br><br>
+          Message:<br>
+          <textarea name="message" placeholder="Put your message here!" rows="5" cols="45"></textarea><br><br>
+          <button class="button button3" onclick="location.href='about.html';" value="Back to product">Submit</button>
+        </div>
+      </form>
     </section>
-    <!-- // COMBINED ELEMENTS SECTION -->
+
+      <!-- // COMBINED ELEMENTS SECTION -->
 
   </div>
 </body>

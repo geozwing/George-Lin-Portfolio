@@ -60,6 +60,7 @@ section code {
 }
 
 section h2 {
+  text-align: center;
   letter-spacing: 5px;
   font-family: 'Nova Black';
   margin-bottom: 2em;
@@ -82,6 +83,7 @@ section h2 {
 }
 
 .header h2 {
+  text-align: left;
   letter-spacing: 0px;
   font-family: 'Nova Regular';
   padding-top: 0px;
@@ -300,7 +302,51 @@ section h2 {
 /*
   TEXT ELEMENTS -------------------
 */
+.containergrid {
+  /* Set the .container class to display as a flexbox,
+  and to wrap flexbox items responsively. */
+  display: flex;
+}
+
+div.desc {
+  font-size: 18px;
+  padding: 15px;
+  text-align: center;
+}
+.containergrid .block {
+  flex-wrap: wrap;
+  height: 100px;
+  /* Set every element to use the border-box model. */
+  border: 2px solid black;
+  /* Set the .block class to grow as needed,
+  as well as to have a basis of 15em. */
+  flex-grow: 1;
+  flex-basis: 15em;
+}
+
+.containergrid .block p {
+  padding: 0.5rem;
+}
+
+.containergrid .block:nth-of-type(1) {
+  background-color: #9933ff;
+}
+
+.containergrid .block:nth-of-type(2) {
+  color: black;
+  background-color: #ccccff;
+}
+
+.containergrid .block:nth-of-type(3) {
+  color: black;
+  background-color: #fff;
+}
+
+.containergrid .block:nth-of-type(4) {
+  background-color: #000;
+}
 /*
+
   COMBINED ELEMENTS -------------------
 */
 .title {
@@ -334,4 +380,31 @@ section h2 {
 
 .content .pic small {
   font-family: 'Nova Thin';
+}
+
+/* Contact us form */
+.feedback-container {
+  margin: 0.5em;
+  width: fit-content;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+.feedback-container input:hover {
+  /* background-color: #f7adad; */
+  border-style: solid;
+  border-color: #9933ff;
+}
+
+.feedback-container input {
+  box-shadow: none;
+  padding: 0.5em;
+  margin-top: 0.25em;
+}
+
+.feedback-container textarea {
+  padding: 0.5em;
+  margin-top: 0.25em;
+  font-family: inherit;
 }
