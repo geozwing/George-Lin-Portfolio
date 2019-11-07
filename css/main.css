@@ -1,8 +1,6 @@
-
 /*
   STYLE GUIDE STYLINGW
 */
-
 @font-face {
   font-family: 'Nova Regular';
   src: url('../fonts/Mark Simonson  Proxima Nova Regular.otf') format('opentype');
@@ -60,15 +58,15 @@ section code {
   letter-spacing: 5px;
 }
 
-.logo b{
+.logo b {
   font-family: 'Nova Black';
 }
 
-.topnav nav ul{
+.topnav nav ul {
   text-align: center;
 }
 
-.topnav nav ul li{
+.topnav nav ul li {
   display: inline-block;
   padding: 20px;
 }
@@ -95,7 +93,6 @@ section code {
   color: white;
 }
 
-
 /* Responsive navigation menu - display links on top of each other instead of next to each other (for mobile devices) */
 @media screen and (max-width: 600px) {
   .topnav a, .topnav-right {
@@ -111,11 +108,9 @@ section code {
   }
 }
 
-
 /*
   INTERACTIVE ELEMENTS -------------------
 */
-
 /* Styling for the navigation button */
 .button-nav {
   display: inline-block;
@@ -132,25 +127,42 @@ section code {
   background-color: #999;
 }
 
-
-
 /*
   TEXT ELEMENTS -------------------
 */
-
-
-
-
 /*
   COMBINED ELEMENTS -------------------
 */
+
+.title{
+  font-family: 'Nova Bold';
+  text-align: center;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
 
 .banner img {
   width: 100%;
   padding-bottom: 2em;
 }
 
-.content{
+.content {
   margin-left: 30%;
   margin-right: 30%;
+}
+
+.content .pic {
+  padding-bottom: 1em;
+  text-align: center;
+}
+
+.content .pic img {
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.content .pic small {
+  font-family: 'Nova Thin';
 }
