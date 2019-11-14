@@ -148,6 +148,25 @@ section h2 {
   font-family: 'Nova Bold';
   color: white;
 }
+@media screen and (min-width: 600px) {
+  .content {
+    margin-left: 30%;
+    margin-right: 30%;
+    padding-bottom: 8em;
+  }
+
+  .title {
+    font-size: 60px;
+  }
+
+  .contact .textbox{
+    margin-top: 30%;
+    margin-right: 10%;
+    text-align: left;
+    font-family: 'Nova Thin';
+    font-size: 40px;
+  }
+}
 
 /* for mobile devices */
 /* Responsive navigation menu - display links on top of each other instead of next to each other (for mobile devices) */
@@ -167,6 +186,24 @@ section h2 {
   .flex-container {
     flex-wrap: wrap;
   }
+
+  .title {
+    font-size: 30px;
+  }
+
+  .content {
+    margin-left: 0%;
+    margin-right: 0%;
+    padding-bottom: 8em;
+  }
+
+  .contact .textbox{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    font-family: 'Nova Thin';
+    font-size: 24px;
+  }
 }
 
 /* HOMEPAGE VIDEO BANNER */
@@ -180,7 +217,16 @@ section h2 {
   overflow: hidden;
 }
 
-/* .video-container {
+/* .video-banner .h1{
+  text-align: center;
+  font-size: 6rem;
+  background: #fff;
+  padding: 20px;
+  margin: 15px;
+  z-index: 1;
+} */
+
+/* .video-container{
   position: absolute;
   top: 0;
   left: 0;
@@ -430,7 +476,7 @@ div.desc {
   text-align: center;
   /* padding-top: 2em; */
   /* padding-bottom: 1em; */
-  font-size: 60px;
+  /* font-size: 60px; */
 }
 
 .title-home{
@@ -445,11 +491,11 @@ div.desc {
   padding-bottom: 2em;
 }
 
-.content {
+/* .content {
   margin-left: 30%;
   margin-right: 30%;
   padding-bottom: 8em;
-}
+} */
 
 .pic {
   padding-top: 3em;
@@ -512,11 +558,13 @@ div.desc {
   float: right;
   right: 0;
 }
-.contact .textbox{
+/* .contact .textbox{
+  margin-top: 30%;
+  margin-right: 10%;
   text-align: left;
   font-family: 'Nova Thin';
   font-size: 40px;
-}
+} */
 .contact a{
   color: white;
   font-family: 'Nova Bold';
