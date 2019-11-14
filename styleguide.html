@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,  maximum-scale=1, minimum-scale=1" />
+  <title>P03 George Lin</title>
+
+  <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+  <div class="logo">
+    <a href="index.html">
+      <h2><b>GEORGE</b> LIN<h2>
+    </a>
+  </div>
+
+  <!-- Top navigation -->
+  <div class="topnav">
+    <nav>
+      <ul>
+        <!-- Centered link -->
+        <li><a href="styleguide.html" class="active">Style Guide</a></li>
+        <li><a href="bio.html">Bio</a></li>
+        <li><a href="project1.html">Project #1</a></li>
+        <li><a href="project2.html">Project #2</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <!-- <li><a href="template.html">Template</a></li> -->
+      </ul>
+    </nav>
+  </div>
+
+
+  <!-- Page Content -->
+  <div class="content">
+
+    <h1>Style Guide - P03 Portfolio George Lin</h1>
+
+
+
+    <nav>
+
+      <p>
+        Go to:
+        <a href="#interactive_elements">Interactive Elements</a>,
+        <a href="#text_elements">Text Elements</a>,
+        <a href="#components">Components</a>,
+        <a href="#combined_elements">Combined Elements</a>,
+      </p>
+
+    </nav>
+
+
+
+    <!-- INTERACTIVE ELEMENTS SECTION // -->
+    <section id="interactive_elements">
+      <h2>Interactive Elements</h2>
+
+      <!-- Default Button styling section -->
+      <section>
+
+        <h3>Navigation Button</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.button-nav</p>
+
+        <h3>Sample code:</h3>
+        <br>
+        <code>&lt;a href="#" class="button"&gt;Default Button&lt;/a&gt;</code>
+
+        <h3>Rendered element:</h3>
+        <a class="button" href="#">Default Button</a>
+
+      </section>
+
+      <section>
+        <h3>In-text link</h3>
+        <a href="css/main.css">This is a link</a>
+      </section>
+
+      <section>
+        <h3>Submit/Reset Buttons</h3>
+
+        <form action="/button-type">
+          <button class="button button3">Reset!</button>
+          <!-- <button type="reset">Reset!</button><br> -->
+          <br>
+          <button class="button button3">Submit</button>
+          <!-- <button type="submit" disabled> Submit</button> -->
+        </form>
+      </section>
+
+      <section>
+        <h3>Text Input Field</h3>
+        <form>
+          <fieldset class="info">
+            <label for="input">This is a label for text input</label>
+            <input class="text_box" id="input1" type="text">
+          </fieldset>
+        </form>
+      </section>
+
+      <!-- Radio Button with Label -->
+      <section class="element">
+        <h3>Radio Button with Label</h3>
+
+        <label class="radio">Choice 1
+          <input type="radio" checked="checked" name="radio">
+          <span class="checkmark"></span>
+        </label>
+        <label class="radio">Choice 2
+          <input type="radio" name="radio">
+          <span class="checkmark"></span>
+        </label>
+
+
+        <!-- Image as a Link -->
+        <section class="element2">
+          <h3>Image as a Link</h3>
+          <br>
+          <a href="bio.html"><img src="img/ss2.jpg" alt="bio pic" style="width: 100%; height: 100%"></a>
+        </section>
+
+
+      </section>
+    </section>
+    <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+
+
+    <!-- TEXT ELEMENTS SECTION // -->
+    <section id="text_elements">
+      <h2>Text Elements</h2>
+
+
+
+
+      <section class="header">
+        <h3>Headings</h3>
+        <!--Four levels of heading // -->
+        <h1>This is Header level 1</h1>
+        <h2>This is Header level 2</h2>
+        <h3>This is Header level 3</h3>
+        <h4>This is Header level 4</h4>
+      </section>
+
+      <section>
+        <h3>Paragraphs</h3>
+        <br>
+        <p>This is a paragraph</p>
+        <p>This is another paragraph.
+          <span>And here is a span</span></p>
+      </section>
+
+      <!-- <section>
+        <h3>Bulleted Lists</h3>
+      </section> -->
+
+      <section>
+        <h3>Numbered Lists</h3>
+      </section>
+
+      <ol>
+        <li>Item 1 for ordered list</li>
+        <li>Item 2 for ordered list</li>
+      </ol>
+    </section>
+    <!-- // TEXT ELEMENTS SECTION -->
+
+    <!-- //COMPONENTS -->
+    <section id="components">
+      <h2>Components</h2>
+
+
+      <section class="header">
+        <h3>Fonts</h3>
+        <h1>Proxima Nova</h1>
+      </section>
+
+      <!-- Color Palettes -->
+      <section>
+        <h3>Colour palettes</h3>
+
+        <div class="containergrid">
+          <div class="block">
+            <div class="one">
+              <div class="desc">#9933ff</div>
+            </div>
+          </div>
+          <div class="block">
+            <div class="two">
+              <div class="desc">#ccccff</div>
+            </div>
+          </div>
+          <div class="block">
+            <div class="three">
+              <div class="desc">#fff</div>
+            </div>
+          </div>
+          <div class="block">
+            <div class="four">
+              <div class="desc">#000</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Imagary -->
+      <section>
+        <h3>Potential imagery, and, or, art direction</h3>
+        <br>
+        <p>
+          <a href="project1.html"><img src="img/p1/03.png" alt="image1" style="width: 100%; height: 100%;" align="middle"></a>
+        </p>
+        </br>
+        <p>
+          <a href="project2.html"><img src="img/p2/screen2.png" alt="image2" style="width: 100%; height: 100%;" align="middle"></a>
+        </p>
+      </section>
+    </section>
+
+    <!-- COMBINED ELEMENTS SECTION // -->
+    <section id="combined_elements">
+      <h2>Combined Elements</h2>
+
+
+      <section>
+        <div class="topnav">
+          <h3>Main Navigation</h3>
+          <nav>
+            <ul>
+              <!-- Centered link -->
+              <li><a href="index.html" class="active">Style Guide</a></li>
+              <li><a href="bio.html">Bio</a></li>
+              <li><a href="project1.html">Project #1</a></li>
+              <li><a href="project2.html">Project #2</a></li>
+              <li><a href="template.html">Template</a></li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+      <section>
+        <h3>Image example with citation</h3>
+        <br>
+        <div class="pic">
+          <img src="img/p2/03.png" alt="Maximum Power" style="width: 100%; height: 100%" align="middle">
+          <small>Figure 4: Maximum Power (Screenshot) Milestone one gameplay, 2018</small>
+        </div>
+
+      </section>
+      <!-- // COMBINED ELEMENTS SECTION -->
+
+  </div>
+</body>
+
+</html>
