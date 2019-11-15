@@ -115,6 +115,10 @@ section h2 {
   color: white;
 }
 
+.logo h2:hover {
+  opacity: 0.5;
+}
+
 .topnav nav ul {
   text-align: center;
 }
@@ -417,6 +421,21 @@ section h2 {
   /* text-transform: uppercase; */
 }
 
+.link-styleguide1 a{
+  color: white;
+}
+
+.link-styleguide1 a:hover {
+  opacity: 0.5;
+}
+
+.link-styleguide2 a{
+  color: white;
+}
+
+.link-styleguide2 a:hover {
+  font-family: 'Nova Bold';
+}
 /*
   TEXT ELEMENTS -------------------
 */
@@ -587,6 +606,21 @@ float: right;
   .footer .logo {
     text-align: left;
   }
+
+  .footer .left{
+    text-align: left;
+  }
+  .footer .right{
+    text-align: right;
+  }
+  .footer .flex-container>div {
+    /* width: 1000px; */
+    /* margin: 10px; */
+    text-align: left;
+    line-height: 20px;
+    font-size: 18px;
+    font-family: 'Nova Light';
+  }
 }
 
 /* mobile */
@@ -599,22 +633,29 @@ float: right;
   .footer .logo {
     text-align: center;
   }
-}
 
-.footer .flex-container>div {
-  /* width: 1000px; */
-  /* margin: 10px; */
-  text-align: left;
-  line-height: 20px;
-  font-size: 18px;
-  font-family: 'Nova Light';
+  .footer .right{
+    text-align: center;
+  }
+  .footer .left{
+    text-align: center;
+  }
+  .footer .flex-container>div {
+    text-align: center;
+    line-height: 20px;
+    font-size: 18px;
+    font-family: 'Nova Light';
+  }
 }
 
 .footer a {
   color: white;
   text-decoration: none;
 }
-
+/*
+.footer .left{
+  text-align: left;
+}
 .footer .right{
   text-align: right;
-}
+} */
