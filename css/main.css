@@ -28,8 +28,14 @@
 
 /* Link */
 a {
-  color: #9933ff;
+  /* color: #9933ff; */
+  color: white;
+  font-family: 'Nova Thin';
   text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.5;
 }
 
 body {
@@ -56,9 +62,11 @@ section p {
 }
 
 section code {
-  color: black;
-  background-color: #ccccff;
+  color: white;
+  background-color: transparent;
+  border-color: white;
   padding: 0.5em 0.75em;
+  border-style: solid;
 }
 
 section h2 {
@@ -149,17 +157,17 @@ section h2 {
   text-decoration: none;
 }
 
-summary{
-    text-align: center;
-    font-family: 'Nova Thin';
-    padding-bottom: 14px;
+summary {
+  text-align: center;
+  font-family: 'Nova Thin';
+  padding-bottom: 14px;
 }
 
-.nav-details details> summary {
+.nav-details details>summary {
   list-style: none;
 }
 
-details> summary::-webkit-details-marker {
+details>summary::-webkit-details-marker {
   display: none;
 }
 
@@ -189,6 +197,7 @@ details> summary::-webkit-details-marker {
 .topnav a:hover {
   /* text-shadow: 0 0 .9px #f2f2f2, 0 0 .9px #f2f2f2, 0 0 .9px #f2f2f2; */
   font-family: 'Nova Bold';
+  opacity: 1;
 }
 
 /* Add a weight to the active/current link */
@@ -293,7 +302,7 @@ details> summary::-webkit-details-marker {
   margin: 15px;
   z-index: 1;
 } */
-.video-container{
+.video-container {
   text-align: center;
   position: absolute;
   width: 100%;
@@ -301,6 +310,7 @@ details> summary::-webkit-details-marker {
   height: auto;
   margin-top: 200px;
 }
+
 .video-banner .color-overlay {
   position: absolute;
   top: 0;
@@ -328,7 +338,6 @@ details> summary::-webkit-details-marker {
 .flex-container a:hover {
   opacity: 0.5;
 }
-
 
 .full-banner img {
   position: relative;
@@ -421,7 +430,7 @@ details> summary::-webkit-details-marker {
   left: 0;
   height: 15px;
   width: 15px;
-  background-color: #ccccff;
+  background-color: white;
   border-radius: 50%;
 }
 
@@ -430,9 +439,9 @@ details> summary::-webkit-details-marker {
   background-color: #ccc;
 }
 
-/* When the radio button is checked, add a blue background */
+/* When the radio button is checked, add a white background */
 .radio input:checked~.checkmark {
-  background-color: #9933ff;
+  background-color: white;
 }
 
 /* Create the indicator (the dot/circle - hidden when not checked) */
@@ -454,12 +463,12 @@ details> summary::-webkit-details-marker {
   width: 5px;
   height: 5px;
   border-radius: 50%;
-  background: white;
+  background: black;
 }
 
 .button {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  background-color: #9933ff;
+  background-color: transparent;
   border: none;
   color: white;
   padding: 10px 16px;
@@ -472,20 +481,21 @@ details> summary::-webkit-details-marker {
   transition-duration: 0.4s;
   cursor: pointer;
   font-family: 'Nova Regular';
+  border-style: solid;
 }
 
 .button3 {
-  background-color: #9933ff;
+  background-color: transparent;
   color: white;
 }
 
 .button3:hover {
-  background-color: #ccccff;
-  color: white;
+  background-color: white;
+  color: black;
   /* text-transform: uppercase; */
 }
 
-.link-styleguide1 a{
+.link-styleguide1 a {
   color: white;
 }
 
@@ -493,13 +503,24 @@ details> summary::-webkit-details-marker {
   opacity: 0.5;
 }
 
-.link-styleguide2 a{
+.link-styleguide2 a {
   color: white;
 }
 
 .link-styleguide2 a:hover {
   font-family: 'Nova Bold';
+  opacity: 1;
 }
+
+.link-styleguide3 a {
+  font-family: 'Nova Bold';
+  color: white;
+}
+
+.link-styleguide3 a:hover {
+  opacity: 0.5;
+}
+
 /*
   TEXT ELEMENTS -------------------
 */
@@ -531,20 +552,11 @@ div.desc {
 }
 
 .containergrid .block:nth-of-type(1) {
-  background-color: #9933ff;
-}
-
-.containergrid .block:nth-of-type(2) {
-  color: black;
-  background-color: #ccccff;
-}
-
-.containergrid .block:nth-of-type(3) {
   color: black;
   background-color: #fff;
 }
 
-.containergrid .block:nth-of-type(4) {
+.containergrid .block:nth-of-type(2) {
   background-color: #000;
 }
 
@@ -671,12 +683,14 @@ float: right;
     text-align: left;
   }
 
-  .footer .left{
+  .footer .left {
     text-align: left;
   }
-  .footer .right{
+
+  .footer .right {
     text-align: right;
   }
+
   .footer .flex-container>div {
     /* width: 1000px; */
     /* margin: 10px; */
@@ -698,12 +712,14 @@ float: right;
     text-align: center;
   }
 
-  .footer .right{
+  .footer .right {
     text-align: center;
   }
-  .footer .left{
+
+  .footer .left {
     text-align: center;
   }
+
   .footer .flex-container>div {
     text-align: center;
     line-height: 20px;
@@ -716,6 +732,7 @@ float: right;
   color: white;
   text-decoration: none;
 }
+
 /*
 .footer .left{
   text-align: left;
