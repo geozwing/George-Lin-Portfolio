@@ -1,6 +1,4 @@
-/*
-  STYLE GUIDE STYLINGW
-*/
+
 @font-face {
   font-family: 'Nova Regular';
   src: url('../fonts/Mark Simonson  Proxima Nova Regular.otf') format('opentype');
@@ -26,6 +24,7 @@
   src: url('../fonts/Mark Simonson  Proxima Nova Black.otf') format('opentype');
 }
 
+
 /* Link */
 a {
   /* color: #9933ff; */
@@ -40,7 +39,7 @@ a:hover {
 
 body {
   font-family: 'Nova Regular';
-  padding: 2rem;
+  /* padding: 2rem; */
   color: white;
   background-color: black;
   font-size: 20px;
@@ -205,6 +204,10 @@ details>summary::-webkit-details-marker {
   color: white;
 }
 
+.styleguide-top{
+  text-align: center;
+}
+
 /* LARGE SCREEN - hide collapsible nav */
 @media (min-width: 950px) {
   .nav-details, summary {
@@ -311,13 +314,47 @@ details>summary::-webkit-details-marker {
   }
 }
 
-/* HOMEPAGE VIDEO BANNER */
+.page-margin{
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+/* HOMEPAGE */
+.home-nav{
+  position: absolute;
+  top: 11.8%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+}
+
+video{
+  position: relative;
+  width:100%;
+  top:0;
+  height: auto;
+}
+
+.home-title{
+  font-family: 'Nova Bold';
+  letter-spacing: 5px;
+  font-size: 160px;
+  text-align: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  z-index: 2;
+}
+
 /* DESKTOP */
 @media (min-width: 600px) {
   .video-banner {
     position: relative;
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -330,8 +367,9 @@ details>summary::-webkit-details-marker {
     left: 0;
     background-color: black;
     width: 100%;
-    height: 100vh;
+    height: 200vh;
     opacity: 0.4;
+    z-index: 1;
   }
 }
 
@@ -340,7 +378,7 @@ details>summary::-webkit-details-marker {
   .video-banner {
     position: relative;
     width: 100%;
-    height: 50vh;
+    /* height: 50vh; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -355,6 +393,7 @@ details>summary::-webkit-details-marker {
     width: 100%;
     height: 50vh;
     opacity: 0.4;
+    z-index: 1;
   }
 }
 
@@ -504,7 +543,6 @@ details>summary::-webkit-details-marker {
 }
 
 .button {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   background-color: transparent;
   border: none;
   color: white;
@@ -517,8 +555,14 @@ details>summary::-webkit-details-marker {
   -webkit-transition-duration: 0.4s;
   transition-duration: 0.4s;
   cursor: pointer;
-  font-family: 'Nova Regular';
+  font-family: 'Nova Thin';
   border-style: solid;
+  border-width: 0.5px;
+}
+
+.button:hover {
+  background-color: white;
+  color: black;
 }
 
 .button3 {
@@ -530,6 +574,10 @@ details>summary::-webkit-details-marker {
   background-color: white;
   color: black;
   /* text-transform: uppercase; */
+}
+
+button a:hover{
+  color: black;
 }
 
 .link-styleguide1 a {
@@ -688,7 +736,9 @@ div.desc {
 /* Contact Page */
 .contact {
   position: relative;
-  padding-bottom: 6em;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-bottom: 4em;
 }
 
 .contact .pic img {
@@ -715,8 +765,9 @@ float: right;
 /* FOOTER */
 .footer {
   margin-top: 0 em;
-  /* position: absolute; */
   left: 0;
+  /* padding-left: 2rem; */
+  /* padding-right: 2rem; */
   padding-top: 5em;
   padding-bottom: 4em;
   /* padding-left: 50px; */
@@ -778,6 +829,7 @@ float: right;
 
 .footer a {
   color: white;
+  font-family: 'Nova Thin';
   text-decoration: none;
 }
 
