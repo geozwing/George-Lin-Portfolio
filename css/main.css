@@ -33,6 +33,10 @@ a {
   text-decoration: none;
 }
 
+b{
+  font-family: 'Nova Bold';
+}
+
 a:hover {
   opacity: 0.5;
 }
@@ -114,6 +118,8 @@ section h2 {
   margin-right: 0;
 }
 
+/* TOP LOGO ATTRIBUTES */
+
 .logo {
   font-family: 'Nova Thin';
   text-align: center;
@@ -133,12 +139,6 @@ section h2 {
   opacity: 0.5;
 }
 
-.bio .logo {
-  font-family: 'Nova Thin';
-  padding-top: 20px;
-  padding-bottom: 40px;
-}
-
 .logo small {
   font-size: 20px;
 }
@@ -147,6 +147,36 @@ section h2 {
   font-size: 20px;
   letter-spacing: 0.01em;
     font-family: 'Nova regular';
+}
+
+/* BIO PAGE */
+
+.bio .logo {
+  font-family: 'Nova Thin';
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+.bio .sub-heading{
+  padding-top: 3em;
+  padding-bottom: 0.5em;
+  text-align: center;
+}
+
+.bio ul {
+  text-align: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.bio ul li {
+  font-family: 'Nova Thin';
+  display: inline-block;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+  line-height: 3em;
 }
 
 /* Mobile collapsible menu */
