@@ -9,6 +9,16 @@
 
   <link rel="stylesheet" href="css/main.css">
 
+  <!-- JAVASCRIPT -->
+
+  <!-- jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>
+
+  <!-- Animate on Scroll -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 </head>
 
 <body>
@@ -20,19 +30,19 @@
   </div>
 
   <!-- HAMBURGER MENU -->
-<nav>
-<details>
-  <summary><img src="img/hamburger.png" alt="nav icon" style="width:15px"> MENU</summary>
-  <div class="nav-details">
-    <ul>
-      <li><a href="bio.html">Bio</a></li>
-      <li><a href="project1.html">Project #1</a></li>
-      <li><a href="project2.html">Project #2</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </div>
-</details>
-</nav>
+  <nav>
+    <details>
+      <summary><img src="img/hamburger.png" alt="nav icon" style="width:15px"> MENU</summary>
+      <div class="nav-details">
+        <ul>
+          <li><a href="bio.html">Bio</a></li>
+          <li><a href="project1.html">Project #1</a></li>
+          <li><a href="project2.html">Project #2</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </details>
+  </nav>
 
   <!-- Top navigation -->
   <div class="topnav">
@@ -49,7 +59,9 @@
 
   <!-- Page Content -->
   <div class="title">
-    <h1>Citation</h1>
+    <div data-aos="fade-up">
+      <h1>Citation</h1>
+    </div>
   </div>
 
   <div class="content">
@@ -57,38 +69,43 @@
 
     <p>
 
-      </p>
+    </p>
 
 
 
   </div>
 
   <!-- FOOTER -->
-  <div class = "page-margin">
-  <div class="footer">
-    <div class="flex-container">
-      <div>
-        <div class="logo">
-          <p><a href="index.html"><b>GEORGE</b> LIN </a></p>
+  <div class="page-margin">
+    <div class="footer" data-aos="fade" data-aos-duration="800">
+      <div class="flex-container">
+        <div>
+          <div class="logo">
+            <p><a href="index.html"><b>GEORGE</b> LIN </a></p>
+          </div>
+          <p>Tel: +1 (778) 939-6091</p>
+          <p>Email: <a href="mailto:georgelin984@gmail.com">georgelin984@gmail.com</a></p>
         </div>
-        <p>Tel: +1 (778) 939-6091</p>
-        <p>Email: <a href="mailto:georgelin984@gmail.com">georgelin984@gmail.com</a></p>
-      </div>
 
-      <div>
-        <div class="right">
-          <p><a href="http://www.youtube.com/aaa984"> YouTube </a></p>
-          <p><a href="http://www.instagram.com/geozwing">Instagram</a></p>
-          <p><a href="http://www.twitter.com/geozwing">Twitter</a></p>
-          <p><a href="styleguide.html">Style Guide</a></p>
-          <p><a href="citation.html">Citation</a></p>
-          <p><a href="https://github.com/geozwing/iat339-P03">Github</a></p>
+        <div>
+          <div class="right">
+            <p><a href="http://www.youtube.com/aaa984"> YouTube </a></p>
+            <p><a href="http://www.instagram.com/geozwing">Instagram</a></p>
+            <p><a href="http://www.twitter.com/geozwing">Twitter</a></p>
+            <p><a href="styleguide.html">Style Guide</a></p>
+            <p><a href="citation.html">Citation</a></p>
+            <p><a href="https://github.com/geozwing/iat339-P03">Github</a></p>
+          </div>
         </div>
-      </div>
 
+      </div>
     </div>
   </div>
-</div>
+
+  <script>
+    AOS.init();
+  </script>
+
 </body>
 
 </html>
