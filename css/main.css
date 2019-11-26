@@ -38,6 +38,7 @@ a:hover {
 }
 
 body {
+  letter-spacing: 0.01em;
   font-family: 'Nova Regular';
   /* padding: 2rem; */
   color: white;
@@ -130,6 +131,22 @@ section h2 {
 
 .logo h2:hover {
   opacity: 0.5;
+}
+
+.bio .logo {
+  font-family: 'Nova Thin';
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+.logo small {
+  font-size: 20px;
+}
+
+.logo .regular-text{
+  font-size: 20px;
+  letter-spacing: 0.01em;
+    font-family: 'Nova regular';
 }
 
 /* Mobile collapsible menu */
@@ -241,10 +258,15 @@ details>summary::-webkit-details-marker {
     margin-left: 20%;
     margin-right: 20%;
     padding-bottom: 8em;
+    line-height: 1.4em;
   }
 
   .title {
     font-size: 60px;
+  }
+
+  .bio .logo {
+    font-size: 120px;
   }
 
   .contact .textbox {
@@ -262,10 +284,15 @@ details>summary::-webkit-details-marker {
     margin-left: 10%;
     margin-right: 10%;
     padding-bottom: 8em;
+    line-height: 1.4em;
   }
 
   .title {
-    font-size: 40px;
+    font-size: 30px;
+  }
+
+  .bio .logo {
+    font-size: 60px;
   }
 
   .contact .textbox {
@@ -297,13 +324,18 @@ details>summary::-webkit-details-marker {
   }
 
   .title {
-    font-size: 30px;
+    font-size: 20px;
+  }
+
+  .bio .logo {
+    font-size: 40px;
   }
 
   .content {
-    margin-left: 0%;
-    margin-right: 0%;
+    margin-left: 5%;
+    margin-right: 5%;
     padding-bottom: 8em;
+    line-height: 1.4em;
   }
 
   .contact .textbox {
@@ -711,6 +743,10 @@ div.desc {
   padding-bottom: 3em;
 }
 
+.cite{
+  text-align: center;
+}
+
 .pic img {
   width: 100%;
   display: block;
@@ -718,7 +754,7 @@ div.desc {
   margin-right: auto;
 }
 
-.pic small {
+small {
   font-family: 'Nova Thin';
 }
 
