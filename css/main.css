@@ -211,7 +211,7 @@ section h2 {
 summary {
   text-align: center;
   font-family: 'Nova Thin';
-  padding-bottom: 14px;
+  padding-bottom: 18px;
 }
 
 .nav-details details>summary {
@@ -262,6 +262,10 @@ details>summary::-webkit-details-marker {
 
 /* LARGE SCREEN - hide collapsible nav */
 @media (min-width: 950px) {
+.mobile {
+  display: none;
+}
+
   .nav-details, summary {
     display: none;
   }
@@ -277,6 +281,10 @@ details>summary::-webkit-details-marker {
 
 /* SMALL SCREEN - hide nav bar */
 @media (max-width: 949px) {
+  .desktop {
+    display: none;
+  }
+
   .topnav {
     display: none;
   }
@@ -304,12 +312,31 @@ details>summary::-webkit-details-marker {
     margin-right: 10%;
     text-align: left;
     font-family: 'Nova Thin';
-    font-size: 40px;
+    /* font-size: 40px; */
+    font-size: 2.5vw;
+    line-height: 3.2vw;
   }
+
+  .page-margin{
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+  /* Contact Page */
+  .contact {
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-bottom: 4em;
+  }
+
+  /* FLEX BOX */
+    .flex-container>div {
+      margin: 10px;
+    }
 }
 
 /* Medium Sreen */
-@media screen and (min-width: 600px) and (max-width: 800px) {
+@media screen and (min-width: 601px) and (max-width: 800px) {
   .content {
     margin-left: 10%;
     margin-right: 10%;
@@ -330,8 +357,26 @@ details>summary::-webkit-details-marker {
     margin-right: 10%;
     text-align: left;
     font-family: 'Nova Thin';
-    font-size: 40px;
+    font-size: 2.5vw;
+    line-height: 3.2vw;
   }
+
+  .page-margin{
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  /* Contact Page */
+  .contact {
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-bottom: 4em;
+  }
+
+  /* FLEX BOX */
+    .flex-container>div {
+      margin: 10px;
+    }
 }
 
 /* for mobile devices */
@@ -364,31 +409,51 @@ details>summary::-webkit-details-marker {
   .content {
     margin-left: 5%;
     margin-right: 5%;
-    padding-bottom: 8em;
+    padding-bottom: 0em;
     line-height: 1.4em;
   }
 
+  /* Contact Page */
+  .contact {
+    padding-bottom: 0em;
+  }
+
+  .contact img{
+    position: relative;
+    top: 0px;
+    left: 0px;
+  }
+
   .contact .textbox {
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 5%;
+    margin-right: 5%;
     text-align: left;
     font-family: 'Nova Thin';
     font-size: 24px;
+    padding-bottom: 1em;
   }
 
   small {
     font-size: 12px;
   }
-}
 
-.page-margin{
-  padding-left: 5rem;
-  padding-right: 5rem;
+  /* FLEX BOX */
+    .flex-container>div {
+      margin: 0px;
+    }
+
+/* FLEX BOX - Home Page */
+  .homepage .flex-container>div {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 1em;
+  }
 }
 
 /* HOMEPAGE */
 .home-nav{
   position: absolute;
+  width: 100%;
   top: 100px;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -476,6 +541,8 @@ video{
   }
 }
 
+/* FLEX BOX */
+
 .flex-container {
   display: flex;
   justify-content: center;
@@ -483,7 +550,6 @@ video{
 
 .flex-container>div {
   width: 1000px;
-  margin: 10px;
   text-align: center;
   line-height: 50px;
   font-size: 30px;
@@ -818,9 +884,6 @@ small {
 /* Contact Page */
 .contact {
   position: relative;
-  padding-left: 5rem;
-  padding-right: 5rem;
-  padding-bottom: 4em;
 }
 
 .contact .pic img {
@@ -848,14 +911,10 @@ float: right;
 .footer {
   margin-top: 0 em;
   left: 0;
-  /* padding-left: 2rem; */
-  /* padding-right: 2rem; */
   padding-top: 5em;
   padding-bottom: 4em;
-  /* padding-left: 50px; */
   width: 100%;
   text-align: left;
-  /* font-size: 18px; */
 }
 
 /* desktop */
@@ -887,6 +946,7 @@ float: right;
   .footer {
     text-align: center;
     padding-left: 0px;
+    padding-top: 3em;
   }
 
   .footer .logo {
