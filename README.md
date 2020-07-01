@@ -1,1 +1,2 @@
-iat339-P03
+Hi, welcome to my portfolio!
+-George Lin
