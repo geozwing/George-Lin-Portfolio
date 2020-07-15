@@ -113,6 +113,16 @@ section h2 {
   line-height: 1em;
 }
 
+.header2 {
+  text-align: center;
+  padding-top: 10em;
+  padding-bottom: 2em;
+}
+
+.header2 h1{
+    font-family: 'Nova Bold';
+}
+
 /* TOP LOGO ATTRIBUTES */
 .logo {
   font-family: 'Nova Thin';
@@ -829,13 +839,13 @@ div.desc {
   padding-bottom: 8em;
 } */
 .pic {
-  padding-top: 3em;
+  padding-top: 1em;
   /* padding-bottom: 3em; */
   text-align: center;
 }
 
 .content .pic {
-  padding-bottom: 3em;
+  padding-bottom: 0.5em;
 }
 
 .cite {
@@ -1041,5 +1051,50 @@ float: right;
     40% {
       transform: rotate(-45deg) translate(0, 0);
     }
+  }
+}
+
+/* GALLERY */
+.sidework {
+  box-sizing: border-box;
+}
+
+.sidework .row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.sidework .column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 50%;
+  padding: 0 4px;
+}
+
+.sidework .column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .sidework .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .sidework .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
   }
 }
