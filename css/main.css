@@ -318,6 +318,31 @@ details>summary::-webkit-details-marker {
 
   .title {
     font-size: 60px;
+    margin-bottom: 75px;
+  }
+
+  .title h1{
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .title .topinfo{
+    font-family: 'Nova thin';
+    font-size: 20px;
+    text-align: center;
+    margin-top: 75px;
+    line-height: 1.4em;
+  }
+
+  .title .smallinfo{
+    font-family: 'Nova Thin';
+    font-size: 20px;
+    text-align: center;
+    line-height: 1.4em;
+  }
+
+  .title .smallinfo p{
+    margin-bottom: 10px;
   }
 
   .bio .logo {
