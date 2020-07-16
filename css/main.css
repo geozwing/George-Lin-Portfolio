@@ -1014,8 +1014,8 @@ float: right;
 @media (min-width: 950px) {
   .demo a {
     position: absolute;
-    top: 78%;
-    left: 50%;
+    top: 75%;
+    left: 48%;
     z-index: 2;
     display: inline-block;
     -webkit-transform: translate(0, -50%);
@@ -1024,6 +1024,8 @@ float: right;
     letter-spacing: .1em;
     text-decoration: none;
     transition: opacity .3s;
+    justify-content: center;
+    text-align: center;
   }
 
   .demo a:hover {
@@ -1077,6 +1079,13 @@ float: right;
       transform: rotate(-45deg) translate(0, 0);
     }
   }
+}
+
+/* MOBILE VER, HIDE HERO SCROLL */
+@media (max-width: 949px) {
+.demo a {
+  display:none;
+}
 }
 
 /* GALLERY */
