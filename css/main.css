@@ -117,11 +117,25 @@ section h2 {
   text-align: center;
   padding-top: 10em;
   padding-bottom: 2em;
+  line-height: 1em;
+  margin-left: 20%;
+  margin-right: 20%;
 }
 
 .header2 h1 {
   font-family: 'Nova Bold';
+  font-size: 60px;
 }
+
+.header3 {
+  /* text-align: center; */
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.header3 h1{
+font-family: 'Nova Thin';
+}
+
 
 /* TOP LOGO ATTRIBUTES */
 .logo {
@@ -846,7 +860,7 @@ div.desc {
   .title-home {
     font-family: 'Nova Bold';
     text-align: center;
-    padding-top: 6em;
+    padding-top: 4em;
     padding-bottom: 2em;
   }
 }
