@@ -390,6 +390,11 @@ details>summary::-webkit-details-marker {
   .flex-container>div {
     margin: 10px;
   }
+
+  .homepage .flex-container{
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 /* Medium Sreen */
@@ -418,6 +423,15 @@ details>summary::-webkit-details-marker {
     line-height: 3.2vw;
   }
 
+  .sidework .textbox {
+    margin-top: 30%;
+    margin-right: 10%;
+    text-align: left;
+    font-family: 'Nova Thin';
+    font-size: 2.5vw;
+    line-height: 3.2vw;
+  }
+
   .page-margin {
     padding-left: 1rem;
     padding-right: 1rem;
@@ -433,6 +447,11 @@ details>summary::-webkit-details-marker {
   /* FLEX BOX */
   .flex-container>div {
     margin: 10px;
+  }
+
+  .homepage .flex-container{
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 
@@ -586,14 +605,15 @@ video {
   }
 }
 
-/* FLEX BOX */
+/* FLEX BOX GENERAL */
+/* HOME PAGE */
 .flex-container {
   display: flex;
   justify-content: center;
 }
 
 .flex-container>div {
-  width: 1000px;
+  width: 20em;
   text-align: center;
   line-height: 50px;
   font-size: 30px;
