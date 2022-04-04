@@ -132,10 +132,10 @@ section h2 {
   margin-left: 5%;
   margin-right: 5%;
 }
-.header3 h1{
-font-family: 'Nova Thin';
-}
 
+.header3 h1 {
+  font-family: 'Nova Thin';
+}
 
 /* TOP LOGO ATTRIBUTES */
 .logo {
@@ -168,20 +168,26 @@ font-family: 'Nova Thin';
 }
 
 /* BIO PAGE */
+.bio {
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-bottom: 4em;
+}
+
 .bio .logo {
   font-family: 'Nova Thin';
-  padding-top: 20px;
-  padding-bottom: 40px;
+  text-align: left;
+  line-height: 1.2em;
 }
 
 .bio .sub-heading {
   padding-top: 3em;
   padding-bottom: 0.5em;
-  text-align: center;
+  text-align: left;
 }
 
 .bio ul {
-  text-align: center;
+  text-align: left;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -191,9 +197,23 @@ font-family: 'Nova Thin';
 .bio ul li {
   font-family: 'Nova Thin';
   display: inline-block;
-  margin-left: 1.5em;
+  /* margin-left: 1.5em; */
   margin-right: 1.5em;
   line-height: 3em;
+}
+
+.bio .content2 {
+  margin-left: 2em;
+  text-align: left;
+  font-size: 20px;
+  line-height: 1.4em;
+}
+
+.bio .regular-text {
+  text-align: left;
+  line-height: 0em;
+  padding-top: 35%;
+  padding-bottom: 1em;
 }
 
 /* Mobile collapsible menu */
@@ -361,7 +381,7 @@ details>summary::-webkit-details-marker {
   }
 
   .bio .logo {
-    font-size: 120px;
+    font-size: 64px;
   }
 
   .contact .textbox {
@@ -391,7 +411,7 @@ details>summary::-webkit-details-marker {
     margin: 10px;
   }
 
-  .homepage .flex-container{
+  .homepage .flex-container {
     display: flex;
     flex-wrap: wrap;
   }
@@ -412,6 +432,14 @@ details>summary::-webkit-details-marker {
 
   .bio .logo {
     font-size: 60px;
+  }
+
+  .bio .flex-container {
+    flex-wrap: wrap;
+  }
+
+  .bio .regular-text {
+    padding-top: 1em;
   }
 
   .contact .textbox {
@@ -449,7 +477,7 @@ details>summary::-webkit-details-marker {
     margin: 10px;
   }
 
-  .homepage .flex-container{
+  .homepage .flex-container {
     display: flex;
     flex-wrap: wrap;
   }
@@ -480,6 +508,26 @@ details>summary::-webkit-details-marker {
 
   .bio .logo {
     font-size: 40px;
+    text-align: center;
+  }
+
+  .bio .regular-text {
+    text-align: center;
+    padding-top: 2em;
+  }
+
+  .bio .content2 {
+    text-align: center;
+  }
+
+  .bio .sub-heading {
+    padding-top: 1.2em;
+    padding-bottom: 0em;
+    text-align: center;
+  }
+
+  .bio ul {
+    text-align: center;
   }
 
   .content {
