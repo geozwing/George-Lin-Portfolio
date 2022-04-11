@@ -415,6 +415,11 @@ details>summary::-webkit-details-marker {
     display: flex;
     flex-wrap: wrap;
   }
+
+  .gallery-container .gallery a img {
+      width: 49%;
+      height: 600px;
+  }
 }
 
 /* Medium Sreen */
@@ -480,6 +485,12 @@ details>summary::-webkit-details-marker {
   .homepage .flex-container {
     display: flex;
     flex-wrap: wrap;
+  }
+
+  .gallery-container .gallery a img {
+      /* float: left; */
+      width: 300px;
+      height: 300px;
   }
 }
 
@@ -571,6 +582,12 @@ details>summary::-webkit-details-marker {
     margin-left: 5%;
     margin-right: 5%;
     margin-bottom: 1em;
+  }
+
+  .gallery-container .gallery a img {
+      /* float: left; */
+      width: 170px;
+      height: 170px;
   }
 }
 
@@ -871,6 +888,33 @@ video {
 
 .link-styleguide3 a:hover {
   opacity: 0.5;
+}
+
+
+.gallery-container {
+	width: 2140px;
+	max-width: 100%;
+	margin: auto;
+  text-align: center;
+}
+
+.gallery-container .gallery a img {
+    /* float: left; */
+    display: inline-block;
+    /* width: 49%;
+    height: 600px; */
+    border: 2px solid #000;
+    -webkit-transition: -webkit-transform .15s ease;
+    -moz-transition: -moz-transform .15s ease;
+    -o-transition: -o-transform .15s ease;
+    -ms-transition: -ms-transform .15s ease;
+    transition: transform .15s ease;
+    position: relative;
+    object-fit: cover;
+}
+
+.clear {
+	clear:both;
 }
 
 /*
