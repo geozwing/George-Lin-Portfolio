@@ -22,6 +22,15 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
+  <!-- SIMPLE LIGHTBOX-->
+  <link href="plugin/simplelightbox-master/dist/simple-lightbox.css" rel="stylesheet" />
+
+  <!-- For legacy browsers -->
+  <script src="plugin/simplelightbox-master/dist/simple-lightbox.legacy.min.js"></script>
+  <!-- As A jQuery Plugin -->
+  <script src="plugin/simplelightbox-master/dist/simple-lightbox.jquery.min.js"></script>
+
+
 </head>
 
 <body>
@@ -135,27 +144,33 @@
     </h2>
 
     <p data-aos="fade-up">
-      During the early development, I sketched out several different designs for the characters and assets through iterations.
+      During the early development, I sketched out several different designs for the characters and assets through iterations. The challenge here was making sure that the designs were all consistent with each other so that they won't look out of
+      place in the game, and it took me a few iterations to get it right for them.
     </p>
+    <br>
 
-    <div class="pic" data-aos="fade-up">
-      <img src="img/tp/sketch1.jpg" alt="Terrapoint" style="width: 50%; height: 100%" align="middle">
-      <!-- <p><small>Figure 3: Lin, G. (March 2019). Storyboard of the VFX Workshop Promo. [Storyboard]</small></p> -->
-    </div>
+    <div class="gallery-container" data-aos="fade-up">
+      <div class="gallery">
 
-    <div class="pic" data-aos="fade-up">
-      <img src="img/tp/sketch2.jpg" alt="Terrapoint" style="width: 50%; height: 100%" align="middle">
-      <!-- <p><small>Figure 3: Lin, G. (March 2019). Storyboard of the VFX Workshop Promo. [Storyboard]</small></p> -->
-    </div>
+        <a href="img/tp/sketch1.jpg" class="big" rel="rel1">
+          <img src="img/tp/sketch1.jpg" alt="" title="">
+        </a>
 
-    <div class="pic" data-aos="fade-up">
-      <img src="img/tp/sketch3.jpg" alt="Terrapoint" style="width: 50%; height: 100%" align="middle">
-      <!-- <p><small>Figure 3: Lin, G. (March 2019). Storyboard of the VFX Workshop Promo. [Storyboard]</small></p> -->
-    </div>
+        <a href="img/tp/sketch2.jpg" class="big" rel="rel1">
+          <img src="img/tp/sketch2.jpg" alt="" title="">
+        </a>
 
-    <div class="pic" data-aos="fade-up">
-      <img src="img/tp/sketch4.jpg" alt="Terrapoint" style="width: 50%; height: 100%" align="middle">
-      <!-- <p><small>Figure 3: Lin, G. (March 2019). Storyboard of the VFX Workshop Promo. [Storyboard]</small></p> -->
+        <a href="img/tp/sketch3.jpg" class="big" rel="rel1">
+          <img src="img/tp/sketch3.jpg" alt="" title="">
+        </a>
+
+        <a href="img/tp/sketch4.jpg" class="big" rel="rel1">
+          <img src="img/tp/sketch4.jpg" alt="" title="">
+        </a>
+
+        <div class="clear"></div>
+
+      </div>
     </div>
 
     <br>
@@ -164,37 +179,41 @@
     </h2>
 
     <p data-aos="fade-up">
-      Next, I incorporated those designs and modeled them from scratch in Maya. The models are created in low-polygons, as it helps make the game run smoother and at the same time, easier to work with.
+      Next, I incorporated those designs and modeled them from scratch in Maya, by using the sketches as references for proportions. I also had to make sure that the models were created in low-polygons, as it helps make the game run smoother and
+      easier to modify at the same time.
     </p>
+    <br>
 
-    <div class="pic" data-aos="fade-up">
-      <img src="img/tp/model_bot1.png" alt="Terrapoint" style="width: 100%; height: 100%" align="middle">
-      <!-- <p><small>Figure 3: Lin, G. (March 2019). Storyboard of the VFX Workshop Promo. [Storyboard]</small></p> -->
-    </div>
+    <div class="gallery-container" data-aos="fade-up">
+      <div class="gallery">
 
-    <div class="pic" data-aos="fade-up">
-      <img src="img/tp/model_bot2.png" alt="Terrapoint" style="width: 100%; height: 100%" align="middle">
-      <!-- <p><small>Figure 3: Lin, G. (March 2019). Storyboard of the VFX Workshop Promo. [Storyboard]</small></p> -->
-    </div>
+        <a href="img/tp/model_bot1.png" class="big" rel="rel2">
+          <img src="img/tp/model_bot1.png" alt="" title="">
+        </a>
 
-    <div class="pic" data-aos="fade-up">
-      <img src="img/tp/model_npc.png" alt="Terrapoint" style="width: 100%; height: 100%" align="middle">
-      <!-- <p><small>Figure 3: Lin, G. (March 2019). Storyboard of the VFX Workshop Promo. [Storyboard]</small></p> -->
-    </div>
+        <a href="img/tp/model_bot2.png" class="big" rel="rel2">
+          <img src="img/tp/model_bot2.png" alt="" title="">
+        </a>
 
-    <div class="pic" data-aos="fade-up">
-      <img src="img/tp/maya_train.png" alt="Terrapoint" style="width: 100%; height: 100%" align="middle">
-      <!-- <p><small>Figure 3: Lin, G. (March 2019). Storyboard of the VFX Workshop Promo. [Storyboard]</small></p> -->
-    </div>
+        <a href="img/tp/model_npc.png" class="big" rel="rel2">
+          <img src="img/tp/model_npc.png" alt="" title="">
+        </a>
 
-    <div class="pic" data-aos="fade-up">
-      <img src="img/tp/process_gun.png" alt="Terrapoint" style="width: 100%; height: 100%" align="middle">
-      <!-- <p><small>Figure 3: Lin, G. (March 2019). Storyboard of the VFX Workshop Promo. [Storyboard]</small></p> -->
-    </div>
+        <a href="img/tp/maya_train.png" class="big" rel="rel2">
+          <img src="img/tp/maya_train.png" alt="" title="">
+        </a>
 
-    <div class="pic" data-aos="fade-up">
-      <img src="img/tp/gun1.png" alt="Terrapoint" style="width: 100%; height: 100%" align="middle">
-      <!-- <p><small>Figure 3: Lin, G. (March 2019). Storyboard of the VFX Workshop Promo. [Storyboard]</small></p> -->
+        <a href="img/tp/process_gun.png" class="big" rel="rel2">
+          <img src="img/tp/process_gun.png" alt="" title="">
+        </a>
+
+        <a href="img/tp/gun1.png" class="big" rel="rel2">
+          <img src="img/tp/gun1.png" alt="" title="">
+        </a>
+
+        <div class="clear"></div>
+
+      </div>
     </div>
 
     <br>
@@ -205,30 +224,34 @@
     <p data-aos="fade-up">
       To prepare the models for texturing, I properly UV mapped them in Maya, in order for the texture to be applied seamlessly. Then, I imported the models into Substance Painter for advanced texturing.
     </p>
+    <br>
 
-    <div class="pic" data-aos="fade-up">
-      <img src="img/tp/texture_bot1.png" alt="Terrapoint" style="width: 100%; height: 100%" align="middle">
-      <!-- <p><small>Figure 3: Lin, G. (March 2019). Storyboard of the VFX Workshop Promo. [Storyboard]</small></p> -->
-    </div>
+    <div class="gallery-container" data-aos="fade-up">
+      <div class="gallery">
 
-    <div class="pic" data-aos="fade-up">
-      <img src="img/tp/texture_bot2.png" alt="Terrapoint" style="width: 100%; height: 100%" align="middle">
-      <!-- <p><small>Figure 3: Lin, G. (March 2019). Storyboard of the VFX Workshop Promo. [Storyboard]</small></p> -->
-    </div>
+        <a href="img/tp/texture_bot1.png" class="big" rel="rel3">
+          <img src="img/tp/texture_bot1.png" alt="" title="" style="width: 100%; height: 100%">
+        </a>
 
-    <div class="pic" data-aos="fade-up">
-      <img src="img/tp/texture_npc.png" alt="Terrapoint" style="width: 100%; height: 100%" align="middle">
-      <!-- <p><small>Figure 3: Lin, G. (March 2019). Storyboard of the VFX Workshop Promo. [Storyboard]</small></p> -->
-    </div>
+        <a href="img/tp/texture_bot2.png" class="big" rel="rel3">
+          <img src="img/tp/texture_bot2.png" alt="" title="" style="width: 100%; height: 100%">
+        </a>
 
-    <div class="pic" data-aos="fade-up">
-      <img src="img/tp/texture_aircon.png" alt="Terrapoint" style="width: 100%; height: 100%" align="middle">
-      <!-- <p><small>Figure 3: Lin, G. (March 2019). Storyboard of the VFX Workshop Promo. [Storyboard]</small></p> -->
-    </div>
+        <a href="img/tp/texture_npc.png" class="big" rel="rel3">
+          <img src="img/tp/texture_npc.png" alt="" title="" style="width: 100%; height: 100%">
+        </a>
 
-    <div class="pic" data-aos="fade-up">
-      <img src="img/tp/texture_gun.png" alt="Terrapoint" style="width: 100%; height: 100%" align="middle">
-      <!-- <p><small>Figure 3: Lin, G. (March 2019). Storyboard of the VFX Workshop Promo. [Storyboard]</small></p> -->
+        <a href="img/tp/texture_aircon.png" class="big" rel="rel3">
+          <img src="img/tp/texture_aircon.png" alt="" title="">
+        </a>
+
+        <a href="img/tp/texture_gun.png" class="big" rel="rel3">
+          <img src="img/tp/texture_gun.png" alt="" title="">
+        </a>
+
+        <div class="clear"></div>
+
+      </div>
     </div>
 
 
@@ -241,20 +264,26 @@
       Since the player has to interact with the characters in the game, animations are needed for them to respond to the interactions. In this stage, I rigged the characters with humanIK and animated multiple actions for each character, such as
       standing up, walking cycle, and picking up objects.
     </p>
+    <br>
 
-    <div class="pic" data-aos="fade-up">
-      <img src="img/tp/gif/bot2.gif" alt="Terrapoint" style="width: 50%; height: 100%" align="middle">
-      <!-- <p><small>Figure 13: Lin, G. (Summer 2019). Animation preview of the planet scene of Heist Hazard in Maya. [GIF]</small></p> -->
-    </div>
+    <div class="gallery-container" data-aos="fade-up">
+      <div class="gallery">
 
-    <div class="pic" data-aos="fade-up">
-      <img src="img/tp/gif/bot1.gif" alt="Terrapoint" style="width: 50%; height: 100%" align="middle">
-      <!-- <p><small>Figure 13: Lin, G. (Summer 2019). Animation preview of the planet scene of Heist Hazard in Maya. [GIF]</small></p> -->
-    </div>
+        <a href="img/tp/gif/bot2.gif" class="big" rel="rel4">
+          <img src="img/tp/gif/bot2.gif" alt="" title="" style="width: 49%; height: 50%">
+        </a>
 
-    <div class="pic" data-aos="fade-up">
-      <img src="img/tp/gif/npc.gif" alt="Terrapoint" style="width: 50%; height: 100%" align="middle">
-      <!-- <p><small>Figure 13: Lin, G. (Summer 2019). Animation preview of the planet scene of Heist Hazard in Maya. [GIF]</small></p> -->
+        <a href="img/tp/gif/bot1.gif" class="big" rel="rel4">
+          <img src="img/tp/gif/bot1.gif" alt="" title="" style="width: 49%; height: 50%">
+        </a>
+
+        <a href="img/tp/gif/npc.gif" class="big" rel="rel4">
+          <img src="img/tp/gif/npc.gif" alt="" title="" style="width: 49%; height: 50%">
+        </a>
+
+        <div class="clear"></div>
+
+      </div>
     </div>
 
 
@@ -264,44 +293,47 @@
     </h2>
 
     <p data-aos="fade-up">
-      On the other hand, I’ve designed and created game environments, such as the subway level and the interior of the train through iterations.
+      On the other hand, I’ve designed and created game environments in Unity, such as the subway level and the interior of the train through iterations. During the process, I encountered numerous challenges and problems, such as having the size of
+      some areas of the subway wrong. For example, I realized the platform that I made was too wide, or the hallway was too narrow, which would create a hindrance to the game experience and ruin the immersion as it wouldn’t be realistic. Therefore, I
+      consulted with my teammates and researched what a real subway would look like in person and on the internet. Through several iterations, I managed to fix the issues that I encountered and also created a much more realistic-looking subway.
     </p>
+    <br>
 
-    <div class="pic" data-aos="fade-up">
-      <img src="img/tp/map.png" alt="Terrapoint" style="width: 50%; height: 100%" align="middle">
-      <!-- <p><small>Figure 3: Lin, G. (March 2019). Storyboard of the VFX Workshop Promo. [Storyboard]</small></p> -->
+    <div class="gallery-container" data-aos="fade-up">
+      <div class="gallery">
+
+        <a href="img/tp/map.png" class="big" rel="rel5">
+          <img src="img/tp/map.png" alt="" title="">
+        </a>
+
+        <a href="img/tp/unity_subway_old.png" class="big" rel="rel5">
+          <img src="img/tp/unity_subway_old.png" alt="" title="">
+        </a>
+
+        <a href="img/tp/unity_subway_old2.png" class="big" rel="rel5">
+          <img src="img/tp/unity_subway_old2.png" alt="" title="">
+        </a>
+
+        <a href="img/tp/unity_subway1.png" class="big" rel="rel5">
+          <img src="img/tp/unity_subway1.png" alt="" title="">
+        </a>
+
+        <a href="img/tp/unity_subway3.png" class="big" rel="rel5">
+          <img src="img/tp/unity_subway3.png" alt="" title="">
+        </a>
+
+        <a href="img/tp/unity1.png" class="big" rel="rel5">
+          <img src="img/tp/unity1.png" alt="" title="">
+        </a>
+
+        <a href="img/tp/unity_train.png" class="big" rel="rel5">
+          <img src="img/tp/unity_train.png" alt="" title="" style="width: 100%; height: 100%">
+        </a>
+
+        <div class="clear"></div>
+
+      </div>
     </div>
-
-    <div class="pic" data-aos="fade-up">
-      <img src="img/tp/unity_subway_old.png" alt="Terrapoint" style="width: 100%; height: 100%" align="middle">
-      <!-- <p><small>Figure 3: Lin, G. (March 2019). Storyboard of the VFX Workshop Promo. [Storyboard]</small></p> -->
-    </div>
-
-    <div class="pic" data-aos="fade-up">
-      <img src="img/tp/unity_subway_old2.png" alt="Terrapoint" style="width: 100%; height: 100%" align="middle">
-      <!-- <p><small>Figure 3: Lin, G. (March 2019). Storyboard of the VFX Workshop Promo. [Storyboard]</small></p> -->
-    </div>
-
-    <div class="pic" data-aos="fade-up">
-      <img src="img/tp/unity_subway1.png" alt="Terrapoint" style="width: 100%; height: 100%" align="middle">
-      <!-- <p><small>Figure 3: Lin, G. (March 2019). Storyboard of the VFX Workshop Promo. [Storyboard]</small></p> -->
-    </div>
-
-    <div class="pic" data-aos="fade-up">
-      <img src="img/tp/unity_subway3.png" alt="Terrapoint" style="width: 100%; height: 100%" align="middle">
-      <!-- <p><small>Figure 3: Lin, G. (March 2019). Storyboard of the VFX Workshop Promo. [Storyboard]</small></p> -->
-    </div>
-
-    <div class="pic" data-aos="fade-up">
-      <img src="img/tp/unity1.png" alt="Terrapoint" style="width: 100%; height: 100%" align="middle">
-      <!-- <p><small>Figure 3: Lin, G. (March 2019). Storyboard of the VFX Workshop Promo. [Storyboard]</small></p> -->
-    </div>
-
-    <div class="pic" data-aos="fade-up">
-      <img src="img/tp/unity_train.png" alt="Terrapoint" style="width: 100%; height: 100%" align="middle">
-      <!-- <p><small>Figure 3: Lin, G. (March 2019). Storyboard of the VFX Workshop Promo. [Storyboard]</small></p> -->
-    </div>
-
 
     <br>
     <h2>
@@ -312,6 +344,7 @@
       In our course, each of our projects has to present at an exhibition on campus, and we were allowed to decorate our “booth” that provides a more immersive experience for the participants. One of my roles was to design our “Booth” and scenarios
       through a series of concept art.
     </p>
+    <br>
 
     <div class="pic" data-aos="fade-up">
       <img src="img/tp/graphic1.png" alt="Terrapoint" style="width: 100%; height: 100%" align="middle">
@@ -325,8 +358,10 @@
     </h2>
 
     <p data-aos="fade-up">
-      On the other hand, I’ve designed and created game environments, such as the subway level and the interior of the train through iterations.
+      In our course, each of our projects has to present at an exhibition on campus, and we were allowed to decorate our “booth” that provides a more immersive experience for the participants. One of my roles was to design our “Booth” and scenarios
+      through a series of concept art.
     </p>
+    <br>
 
     <div class="pic" data-aos="fade-up">
       <img src="img/tp/ex1.png" alt="Terrapoint" style="width: 100%; height: 100%" align="middle">
@@ -400,6 +435,15 @@
   <!-- INITIALIZE AOS -->
   <script>
     AOS.init();
+  </script>
+
+  <!-- SIMPLE LIGHTBOX -->
+  <script>
+    // As A jQuery Plugin -->
+    var gallery = $('.gallery a').simpleLightbox({
+      /* options */
+      scaleImageToRatio: true,
+    });
   </script>
 
 </body>
