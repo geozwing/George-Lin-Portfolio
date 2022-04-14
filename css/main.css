@@ -1224,6 +1224,19 @@ float: right;
 /* GALLERY */
 .sidework {
   box-sizing: border-box;
+  text-align: center;
+}
+
+.sidework h2{
+  margin-bottom: 0px;
+}
+
+.sidework h1{
+  line-height: normal;
+}
+
+.sidework h3{
+  line-height: normal;
 }
 
 .sidework .row {
