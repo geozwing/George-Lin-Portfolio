@@ -24,88 +24,43 @@
 
 </head>
 
-<body>
+<body class="no-logo">
 
-  <!-- Mobile top section -->
-  <div class="mobile">
-    <div class="logo">
-      <a href="index">
-        <h2><b>GEORGE</b> LIN<h2>
-      </a>
-    </div>
-  </div>
-
-  <!-- HAMBURGER MENU -->
-  <nav>
-
-    <details>
-      <summary><img src="img/hamburger.png" alt="mobile nav icon" style="width:15px"> MENU</summary>
-      <div class="nav-details">
-        <ul>
-          <li><a href="bio">Bio</a></li>
-          <li><a href="index#section02">Work</a></li>
-          <li><a href="doc/resume_georgelin.pdf" target="_blank">Resume</a></li>
-          <li><a href="contact">Contact</a></li>
-          <li><a href="sidework">Side Work</a></li>
-        </ul>
-      </div>
-    </details>
-  </nav>
-
-  <div class="home-nav">
-
-    <div class="desktop">
-      <div class="logo">
-        <a href="index">
-          <h2><b>GEORGE</b> LIN<h2>
-        </a>
-      </div>
-    </div>
-
-    <!-- Destop Nav with abstract -->
-
-    <!-- Top navigation -->
-    <div class="topnav">
-      <nav>
-        <ul>
-          <!-- Centered link -->
-          <li><a href="bio">Bio</a></li>
-          <li><a href="index#section02">Work</a></li>
-          <li><a href="doc/resume_georgelin.pdf" target="_blank">Resume</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="sidework">Side Work</a></li>
-        </ul>
-      </nav>
-    </div>
-  </div>
+  <!-- NAVIGATION BAR -->
+  <main-nav></main-nav>
+  <script src="js/main-nav.js"></script>
 
   <!-- Page Content -->
   <div class="homepage">
 
     <!-- Hero Video -->
-    <div class="video-banner" data-aos="fade" data-aos-duration="1000">
+
+    <div class="hero-wrapper" data-aos="fade" data-aos-duration="1000">
+
+      <div class="color-overlay"></div>
+      <video autoplay loop muted playsinline class="hero-video">
+        <source src="video/tmnt_chair_video.mp4" type="video/mp4">
+      </video>
+
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content">
+        <div class="logo">
+          <h1><b>GEORGE</b> LIN</h1>
+        </div>
+        <p>Product Designer | 3D Artist | Design Strategist</p>
+      </div>
 
       <!-- HERO SCROLL BUTTON -->
       <section id="section01" class="demo">
         <a href="#section02"><span></span>WORK</a>
       </section>
 
-      <div class="video-container">
-        <div class="color-overlay"></div>
-        <video autoplay loop muted>
-          <source src="video/summersocial.mp4" type="video/mp4">
-        </video>
-      </div>
-
-      <div class="home-title">
-        <p> </p>
-      </div>
-
     </div>
 
     <div class="pic" data-aos="fade" data-aos-duration="1000">
-    <p><small> <a href="https://www.youtube.com/watch?v=gew0MoLu1KY">IATSU Summer Social '19 Promo video, edited and animated by George Lin.</a></small></p>
-  </div>
+      <p><small> <a href="https://www.youtube.com/watch?v=CTMNQq9q5Ws">GHOST X TMNT Gaming Chair Promo video, edited and animated by George Lin.</a></small></p>
+    </div>
 
     <div class="page-margin">
 
@@ -118,7 +73,8 @@
         <div class="flex-container" data-aos="fade-up">
 
           <div>
-            <a href="clutchchairz"><img src="img/clutch/clutch_landing.jpg" alt="Clutch Chairz" style="width:100%"></a>
+            <a href="clutchchairz.html"><img src="img/clutch/clutch_landing.jpg" alt="Clutch Chairz"
+                style="width:100%"></a>
             <div>Clutch Chairz</div>
 
             <div class="smallinfo">
@@ -128,7 +84,19 @@
           </div>
 
           <div>
-            <a href="heisthazard"><img src="img/hh/images/hh_landing.png" alt="Heist Hazard" style="width:100%"></a>
+            <a href="bmtexquisite.html"><img src="img/bmt/bmtex3_landing.jpg" alt="Master Badminton Product"
+                style="width:100%"></a>
+            <div>Master Badminton Exquisite No.3</div>
+
+            <div class="smallinfo">
+              GRAPHIC DESIGN | PRODUCT
+            </div>
+
+          </div>
+
+          <div>
+            <a href="heisthazard.html"><img src="img/hh/images/hh_landing.png" alt="Heist Hazard"
+                style="width:100%"></a>
             <div>Heist Hazard</div>
 
             <div class="smallinfo">
@@ -138,7 +106,7 @@
           </div>
 
           <div>
-            <a href="terrapoint"><img src="img/tp/video1.png" alt="Terrapoint" style="width:100%"></a>
+            <a href="terrapoint.html"><img src="img/tp/video1.png" alt="Terrapoint" style="width:100%"></a>
             <div>Terrapoint</div>
 
             <div class="smallinfo">
@@ -148,7 +116,7 @@
           </div>
 
           <div>
-            <a href="deceived"><img src="img/deceived/cover1.png" alt="Deceived" style="width:100%"></a>
+            <a href="deceived.html"><img src="img/deceived/cover1.png" alt="Deceived" style="width:100%"></a>
             <div>Deceived</div>
 
             <div class="smallinfo">
@@ -157,22 +125,13 @@
 
           </div>
 
-          <div>
-            <a href="vfxws"><img src="img/vfxws/vfxws_still.jpg" alt="VFX Workshop Promo Video" style="width:100%"></a>
+          <!-- <div>
+            <a href="vfxws.html"><img src="img/vfxws/vfxws_still.jpg" alt="VFX Workshop Promo Video"
+                style="width:100%"></a>
             <div>VFX Workshop Promo Video</div>
 
             <div class="smallinfo">
               VIDEO | VISUAL EFFECTS
-            </div>
-
-          </div>
-
-          <!-- <div>
-            <a href="bmtexquisite"><img src="img/bmt/bmtex3_landing.jpg" alt="Master Badminton Product" style="width:100%"></a>
-            <div>Master Badminton Exquisite No.3</div>
-
-            <div class="smallinfo">
-              GRAPHIC DESIGN | PRODUCT
             </div>
 
           </div> -->
@@ -187,15 +146,16 @@
 
           </div> -->
 
-          <!-- <div>
-            <a href="dsbia"><img src="img/dsbia/glow_landing.png" alt="Glow Laser & Skincare Website" style="width:100%"></a>
+          <div>
+            <a href="dsbia.html"><img src="img/dsbia/glow_landing.png" alt="Glow Laser & Skincare Website"
+                style="width:100%"></a>
             <div>Glow Laser & Skincare Website</div>
 
             <div class="smallinfo">
               WEB DESIGN | USER INTERFACE DESIGN
             </div>
 
-          </div> -->
+          </div>
 
 
           <!-- UNSELECTED PROJECTS -->
@@ -219,15 +179,15 @@
     </div>
 
 
-  <!-- FOOTER -->
-  <footer></footer>
-  <script src="js/footer.js"></script>
+    <!-- FOOTER -->
+    <footer></footer>
+    <script src="js/footer.js"></script>
 
 
-  <!-- INITIALIZE AOS -->
-  <script>
-    AOS.init();
-  </script>
+    <!-- INITIALIZE AOS -->
+    <script>
+      AOS.init();
+    </script>
 
 </body>
 

@@ -592,13 +592,21 @@ details>summary::-webkit-details-marker {
 }
 
 /* HOMEPAGE */
-.home-nav {
+.desktop-nav {
   position: absolute;
   width: 100%;
   top: 100px;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 3;
+}
+
+/* BIO PAGE / NORMAL NAV OVERRIDE */
+body.static-nav .desktop-nav {
+    position: relative;      /* Un-floats the nav */
+    top: 0;                  /* Resets top positioning */
+    left: 0;                 /* Resets left positioning */
+    transform: none;         /* Removes the translation centering */
 }
 
 video {
@@ -1280,4 +1288,119 @@ float: right;
     flex: 100%;
     max-width: 100%;
   }
+}
+
+
+/* The container that holds everything */
+.hero-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Makes the section take up exactly 100% of the screen height */
+  display: flex;
+  align-items: center; /* Centers vertically */
+  justify-content: center; /* Centers horizontally */
+  overflow: hidden; /* Hides any video bleed */
+}
+
+/* The Background Video */
+.hero-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Forces the video to fill the screen without squishing/stretching */
+  z-index: -2; /* Pushes the video to the very back */
+}
+
+/* Optional: A subtle dark tint over the video so white text is easier to read */
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* 40% black tint */
+  z-index: -1; /* Sits between the video and the text */
+}
+
+/* The Floating Text Box */
+.hero-content {
+  text-align: center;
+  color: #ffffff;
+  z-index: 1; /* Keeps text on top of everything */
+}
+
+/* Typography Styling */
+.hero-content h1 {
+  font-size: 4rem;
+  letter-spacing: 4px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  font-weight: 300;
+}
+
+/* Optional Logo styling if you use one like Kidmograph's "K" */
+.hero-logo {
+  width: 80px;
+  margin-bottom: 20px;
+}
+
+/* The "Hi, I am" text */
+.hero-content .greeting {
+  font-size: 1.2rem;     /* Keeps it small and subtle */
+  letter-spacing: 2px;   /* Matches the airy feel of your subtitle */
+  font-weight: 300;      /* Keeps the font thin/elegant */
+  margin-bottom: 5px;    /* Tucks it nicely right on top of your name */
+  text-transform: none;  /* Prevents it from being forced into ALL CAPS if you have a global rule */
+}
+
+.hero-wrapper img{
+  z-index: -2; /* Pushes the img to the very back */
+}
+
+
+/* The Fade-Up Animation */
+@keyframes cinematicFade {
+  0% {
+    opacity: 0;
+    transform: translateY(20px); /* Starts 20px lower */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* Ends in its normal position */
+  }
+}
+
+/* Hide them initially so they don't blink before animating */
+.hero-content .greeting,
+.hero-content h1,
+.hero-content p {
+  opacity: 0; 
+  animation: cinematicFade 1s ease-out forwards; /* 'forwards' keeps them visible at the end */
+}
+
+/* 1. The Greeting fades in first (short delay) */
+/* .hero-content .greeting {
+  animation-delay: 0.3s;
+} */
+
+/* 2. Your Name fades in second */
+.hero-content h1 {
+  animation-delay: 0.3s;
+}
+
+/* 3. Your Title fades in last */
+.hero-content p:last-child {
+  animation-delay: 0.6s; 
+}
+
+/* This hides the logo on any page where the body has the class "no-logo" */
+body.no-logo .nav-bar .logo {
+    display: none !important;
 }
