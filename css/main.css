@@ -1154,13 +1154,13 @@ float: right;
 /* Appears only in desktop mode */
 @media (min-width: 950px) {
   .demo a {
-    position: absolute;
+position: absolute;
     top: 75%;
-    left: 48%;
+    left: 50%; /* 1. Change this from 48% to exactly 50% */
     z-index: 2;
     display: inline-block;
-    -webkit-transform: translate(0, -50%);
-    transform: translate(0, -50%);
+    -webkit-transform: translate(-50%, -50%); /* 2. Change the 0 to -50% */
+    transform: translate(-50%, -50%);         /* 3. Change the 0 to -50% */
     color: #fff;
     letter-spacing: .1em;
     text-decoration: none;
