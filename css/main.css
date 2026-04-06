@@ -1020,9 +1020,15 @@ div.desc {
 
 .pic img {
   width: 100%;
+  max-width: 1000px;
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+/* Override for exceptionally wide images */
+.pic.wide img {
+    max-width: 100%; !important /* This removes the 1000px cap and lets it fill the screen */
 }
 
 small {
